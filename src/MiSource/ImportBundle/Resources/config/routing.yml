@@ -1,0 +1,3 @@
+mi_source_import_homepage:
+    path:     /
+    defaults: { _controller: ImportBundle:Default:index }
