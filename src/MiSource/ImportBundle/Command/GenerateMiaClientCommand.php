@@ -34,7 +34,7 @@ class GenerateMiaClientCommand extends ContainerAwareCommand
         $this->setName('miconsole:generate-mia-client')
              ->setDescription('Generates a MIA client for testing purposes')
              ->setHelp('Generate a mia client')
-             ->addArgument('file', InputArgument::REQUIRED, 'CSV file to consume.');
+             ->addArgument('file', InputArgument::REQUIRED, 'CSV file tods consume.');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
