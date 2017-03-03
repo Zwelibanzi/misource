@@ -1,6 +1,0 @@
-services:
-  logger.stamp:
-    class: MiSource\ImportBundle\Logger\Stamp
-
-  import.parser:
-      class: MiSource\ImportBundle\Import\Parse
