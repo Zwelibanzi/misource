@@ -67,7 +67,7 @@ class GenerateMiaClientCommand extends ContainerAwareCommand
 
         for( $x = 0; $x < count($fields); $x++) {
 
-            $consoleOutput->write($fields[$x] . $this->makeTabs() . ' | ');
+            $consoleOutput->write(trim($fields[$x]) . $this->makeTabs(3) . ' | ');
         }
         $consoleOutput->writeln('');
         $consoleOutput->writeln('__________________________________________________________________');
@@ -76,7 +76,7 @@ class GenerateMiaClientCommand extends ContainerAwareCommand
 
             $values = explode(',', $record);
             foreach($values as $value) {
-                $consoleOutput->write($value . $this->makeTabs() . ' | ');
+                $consoleOutput->write(trim($value) . $this->makeTabs(3) . ' | ');
             }
 
             $consoleOutput->writeln('');
